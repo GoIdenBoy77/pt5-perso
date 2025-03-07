@@ -1,0 +1,658 @@
+/* En-tête - Page 1 */
+.page1 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1e1e1e;
+    padding: 20px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(174, 0, 255);
+}
+
+.page1 .logo {
+    font-size: 28px;
+    color: #800080;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+.page1 .nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.page1 .nav a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.page1 .nav a:hover {
+    color: #800080;
+}
+
+/* Corps de la page 1 */
+.page1 body {
+    background-color: #333; /* Fond noir */
+    color: #fff; /* Texte blanc */
+    font-family: Arial, sans-serif;
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime les marges internes */
+    text-align: center; /* Centre le texte horizontalement */
+    padding-top: 80px; /* Compense la hauteur du header pour éviter qu'il ne cache le contenu */
+}
+
+/* En-tête - Page 2 */
+.page2 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1e1e1e;
+    padding: 20px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(255, 0, 0);
+}
+
+.page2 .logo {
+    font-size: 28px;
+    color: #ff0000;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+.page2 .nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.page2 .nav a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.page2 .nav a:hover {
+    color: #ff0000;
+}
+
+/* Corps de la page 2 */
+.page2 body {
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-top: 80px;
+}
+
+/* Conteneurs & Animation (Communs) */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Images & Descriptions */
+.page1 .container img {
+        width: 100%;
+        max-width: 700px;
+        height: auto;
+        border-radius: 15px;
+        margin-bottom: 20px;    
+        box-shadow: 0 4px 15px rgba(174, 0, 255);
+}
+
+.page2 .container img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.5);
+}
+
+/* Liens */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Page 3 - En-tête */
+.page3 .header {
+    position: fixed; /* Fixe le header en haut de la page */
+    top: 0;
+    left: 0;
+    width: 100%; /* Prend toute la largeur de la fenêtre */
+    background-color: #1e1e1e;
+    padding: 20px 0;
+    z-index: 1000; /* S'assure que le header reste au-dessus des autres éléments */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Ombre douce pour démarquer le header */
+}
+
+.page3 .logo {
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+.page3 .nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.page3 .nav a {
+    color: #1e1e1e;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.page3 .nav a:hover {
+    color: #ff0000;
+}
+
+/* Corps de la page 3 */
+.page3 body {
+    background-color: #1e1e1e; /* Fond clair */
+    color: #333; /* Texte sombre pour le contraste */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 120px; /* Compense la hauteur du header */
+    text-align: center;
+}
+
+/* Conteneur principal */
+.page3 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgb(255, 0, 0);
+}
+
+/* Animation d'apparition (fade-in) */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.page3 .container {
+    animation: fadeIn 2s ease-in-out; /* Animation pour le fade-in */
+}
+
+/* Styles pour le nom de la voiture */
+.page3 h1 {
+    font-size: 3em;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Styles pour les caractéristiques */
+.page3 .features {
+    margin-top: 30px;
+    text-align: left;
+    max-width: 800px;
+    width: 100%;
+}
+
+.page3 .features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.page3 .features li {
+    font-size: 1.2em;
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+.page3 .video iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(255, 0, 0);
+}
+
+/* Style des liens (si nécessaire dans le contenu) */
+.page3 a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.page3 a:hover {
+    text-decoration: underline;
+}
+
+
+/* --- RESET DE BASE --- */
+.page-4 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-4 body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #fff; /* Texte blanc par défaut */
+    background: linear-gradient(135deg, #333, #333); /* Dégradé léger pour un fond sombre */
+}
+
+/* --- NAVIGATION --- */
+.page-4 header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.page-4 nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.page-4 nav ul li {
+    margin: 0 15px;
+}
+
+.page-4 nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.page-4 nav ul li a:hover {
+    background-color: #9b59b6;
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+
+/* --- STYLE DES SECTIONS --- */
+.page-4 main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #333; /* Fond sombre pour correspondre à l'accueil */
+    color: #f4f4f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    animation: fade-in 1s ease;
+}
+
+/* Animation d’apparition des éléments au défilement */
+.page-4 @keyframes fade-in {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.page-4 @keyframes slide-in-left {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* --- STYLES DES TITRES ET TEXTES --- */
+.page-4 h1, .page-4 h2, .page-4 h3 {
+    color: #9b59b6;
+    margin-bottom: 0.5em;
+    font-weight: 700;
+}
+
+.page-4 p, .page-4 ul {
+    margin-bottom: 1em;
+    color: #ddd; /* Texte description en gris clair */
+}
+
+.page-4 h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.page-4 h2, .page-4 h3 {
+    font-size: 1.5em;
+    padding-top: 35px;
+}
+
+/* --- LISTES D'EXPÉRIENCE ET DE COMPÉTENCES --- */
+.page-4 ul ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+/* --- STYLES DES IMAGES ET GALLERIES --- */
+.page-4 figure {
+    margin: 20px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-4 figure img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.page-4 figure img:hover {
+    transform: scale(1.05); /* Zoom progressif au survol */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.page-4 figcaption {
+    margin-top: 0.5em;
+    font-style: italic;
+    color: #bbb; /* Légèrement plus clair pour la légende */
+}
+
+/* On désactive l'effet "hover" seulement pour les images de la page town */
+.page-4 .town-image:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+/* --- Section Sommaire avec Parallax --- */
+.page-4 .section-sommaire {
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 50px 0;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.page-4 .section-sommaire::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    z-index: 1;
+}
+
+.page-4 .conteneur-sommaire {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    z-index: 2;
+    position: relative;
+}
+
+.page-4 .item-sommaire:nth-child(5) {
+    grid-column: 1 / -1;
+    margin: 0 auto;
+}
+
+.page-4 .item-sommaire {
+    background: rgba(0, 0, 0, 0.247);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #9b59b6;
+    text-align: left;
+}
+
+.page-4 .item-sommaire:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgb(255, 0, 0);
+}
+
+/* Texte de Description */
+.page-4 .texte-description {
+    color: #ddd;
+    margin: 15px 0;
+}
+
+/* Boutons d’appel à l’action */
+.page-4 .bouton-cta {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #9b59b6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.page-4 .bouton-cta:hover {
+    background-color: #9b59b6;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Effet Parallax */
+.page-4 .section-sommaire {
+    background-attachment: fixed;
+}
+
+/* --- SLIDESHOW --- */
+.page-4 .slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.page-4 .slide {
+    display: none;
+    animation: slide-in-left 1s ease-out;
+}
+
+.page-4 .slide.active {
+    display: block;
+    animation: zoom-in 1.5s ease-out forwards;
+}
+
+.page-4 @keyframes zoom-in {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+}
+
+/* --- BOUTONS ET LIENS INTERACTIFS --- */
+.page-4 a, .page-4 button {
+    color: #9b59b6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, box-shadow 0.3s;
+}
+
+.page-4 a:hover, .page-4 button:hover {
+    color: #9b59b6;
+    box-shadow: 0 4px 8px rgba(255, 0, 0);
+}
+
+/* --- RESPONSIVE DESIGN --- */
+.page-4 @media (max-width: 768px) {
+    .page-4 nav ul {
+        flex-direction: column;
+    }
+
+    .page-4 main {
+        padding: 15px;
+    }
+
+    .page-4 figure img {
+        max-width: 100%;
+    }
+}
+
+/* Vidéo Responsive */
+.page-4 .video-responsive {
+    width: 100%;
+    max-width: 800px; /* Taille maximale sur les écrans larges */
+    height: auto;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Vidéo Youtube Responsive */
+
+.page-4 .video-youtube-responsive {
+    overflow:hidden;
+    padding-bottom:50%; 
+    position:relative;
+}
+
+.page-4 .video-youtube-responsive iframe {
+    left:0;
+    top:0;
+    height:80%;
+    width:70%;
+    position: absolute;
+}
+
+/* Ajustement de la taille de la vidéo pour les petits écrans */
+.page-4 @media (max-width: 768px) {
+    .page-4 .video-responsive {
+        max-width: 100%; /* Prend toute la largeur sur les petits écrans */
+    }
+}
+
+/* --- Style pour le titre de la section --- */
+.page-4 .titre-section {
+    font-size: 1.8em;
+    color: #9b59b6;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+/* --- Conteneur de la Grille pour les Photos --- */
+.page-4 .highlight-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes pour aligner les images deux par deux */
+    gap: 20px; /* Espace entre les éléments */
+    max-width: 1000px;
+    margin: 0 auto; /* Centre la grille */
+    padding: 10px;
+}
+
+/* Style des éléments individuels de la grille */
+.page-4 .highlight-item {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #9b59b6;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.page-4 .highlight-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.page-4 .highlight-item img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.page-4 .highlight-item figcaption {
+    margin-top: 10px;
+    color: #ddd;
+    font-style: italic;
+}
+
+/* Adaptation Responsive */
+.page-4 @media (max-width: 768px) {
+    .page-4 .highlight-container {
+        grid-template-columns: 1fr; /* Passe à une colonne pour les petits écrans */
+    }
+}
+
+.page-4 .image-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.page-4 .header-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optionnel : pour adoucir les bords */
+}
+
+
+.tableau{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+table {
+    width: 50%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid red;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #333;
+    color: white;
+  }
+  
+.Questionnaire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+
+}         
+
+input,
+textarea{
+    padding: 10px;
+    border: 1px solid black;
+    outline: none;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}

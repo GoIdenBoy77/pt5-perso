@@ -1,0 +1,146 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    color: #ffffff;
+    background-color: #333; /* Fond noir */
+    line-height: 1.6;
+}
+
+/* En-tête */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+/* Conteneur principal */
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* Sections des maisons */
+.house-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.house-section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.house-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.house-image img:hover {
+    transform: scale(1.05);
+}
+
+.house-description {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.house-description h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+/* Menu */
+.menu {
+    color: #ffffff;
+}
+
+/* CSS spécifique à la page Modern Villa */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px; /* Pour éviter que le contenu s'étale trop */
+}
+
+/* Style pour chaque élément de la grille */
+.grid-item {
+    background-color: #555;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Style pour les images dans la grille */
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Grille de contenu */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Grille responsive */
+    gap: 15px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Style des images */
+.grid-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Empêche la déformation */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.grid-item img:hover {
+    transform: scale(1.05);
+}
+
