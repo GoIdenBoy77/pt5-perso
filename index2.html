@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" class="page-4">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Jules Guérin</title>
+    <link rel="stylesheet" href="test.css"> <!-- Lien vers le CSS global -->
+</head>
+<body>
+    <!-- En-tête avec une image centrée -->
+    <header>
+        <div class="image-header">
+            <img src="image/j-logo.jpg" alt="J" class="header-image" width="175" height="175">
+            <h2><a href="../index.html">INDEX</a></h2>
+        </div>
+        <h1>Welcome to My Personal Website</h1>
+        <p>Your gateway to my tastes, interests, and more.</p>
+    </header>
+
+    <!-- Sommaire Visuel avec Parallax -->
+    <section class="section-sommaire">
+        <div class="conteneur-sommaire">
+            <div class="item-sommaire">
+                <h2><a href="CarCategories.html">Cars</a></h2>
+                <p class="texte-description">A complete overview of the different car categories and which car in each categories</p>
+                <a href="CarCategories.html" class="bouton-cta">View the different categories</a>
+            </div>
+            <div class="item-sommaire">
+                <h2><a href="Houses.html">Houses</a></h2>
+                <p class="texte-description">A complete overview of the different type of house I'd like to have</p>
+                <a href="Houses.html" class="bouton-cta">View the different houses</a>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <div class="Questionnaire">
+            <form method="get">
+                <fieldset>
+                   <legend>Vos coordonnées</legend> <!-- Titre du fieldset --> 
+                   <label for="nom">Nom :</label>
+                   <input type="text" name="nom" id="nom">
+                   <label for="prenom">Prénom :</label>
+                   <input type="text" name="prenom" id="prenom">
+                   <label for="email">E-mail :</label>
+                   <input type="email" name="email" id="email" autofocus required>
+                </fieldset>
+                <input type="submit" value="Envoyer">
+            </form>
+        </div>
+    </section>
+</body>
+</html>
